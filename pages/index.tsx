@@ -1,3 +1,9 @@
-const IndexPage = () => <h1>Hello Next.js 👋</h1>
+import Navbar from '../Components/Navbar'
+
+const IndexPage = () => (
+  <>
+    <Navbar />
+  </>
+)
 
 export default IndexPage
