@@ -1,3 +1,39 @@
+.navbar {
+  background-color: #242526;
+}
+.navbar-start a {
+  color: rgb(141, 141, 141);
+}
+.navbar-start a:hover {
+  background-color: #2d88ff;
+  color: #fff;
+}
 .img_circle {
   border-radius: 50%;
+  border: 2px solid #2d88ff;
+}
+.main_page {
+  background-image: url('https://wallpaperaccess.com/full/2918065.jpg');
+  background-color: #18191a;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-position: right;
+  background-size: cover;
+  height: 91.8vh;
+}
+.before_name {
+  font-size: 1.5em;
+  padding: none;
+  color: #fff;
+}
+.name {
+  color: #fff;
+  /* color: #2d88ff; */
+  font-weight: bold;
+  font-size: 3em;
+}
+.name a {
+  color: #fff;
+  font-weight: bold;
+  /* font-size: 3em; */
 }
