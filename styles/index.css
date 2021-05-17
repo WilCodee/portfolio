@@ -1,4 +1,3 @@
-html {
-  color: #fff;
-  background-color: #272727;
+.img_circle {
+  border-radius: 50%;
 }
