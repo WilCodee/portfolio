@@ -83,3 +83,16 @@ html {
   background-color: #fff;
   border-radius: 50%;
 }
+
+/* classes de pagina proyects */
+.proyects {
+  margin-top: 5em;
+}
+.card_pro {
+  padding: 1em;
+  background-color: #282828;
+}
+.card_href:hover {
+  text-decoration: underline;
+  text-decoration-color: #2d88ff;
+}
