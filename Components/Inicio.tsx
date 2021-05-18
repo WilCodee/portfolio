@@ -5,13 +5,13 @@ const Inicio = (): JSX.Element => {
     <>
       <Row justify='space-around' className='main_page' align='middle'>
         <Col>
-          <p>
+          <div>
             <a className='before_name'>Hola, mi nombre es</a>
             <h1 className='name'>
               Wilinston
               <a> Quispe</a>
             </h1>
-          </p>
+          </div>
         </Col>
         <Col style={{ background: 'black' }}>
           <Image
