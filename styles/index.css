@@ -78,3 +78,8 @@ html {
   background: #fff;
   z-index: 50;
 }
+
+.nextjs {
+  background-color: #fff;
+  border-radius: 50%;
+}
