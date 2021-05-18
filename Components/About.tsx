@@ -1,18 +1,11 @@
 import { Button, Col, Image, Row } from 'antd'
+import NavHead from './atoms/NavHead'
 
 const About = () => {
   return (
     <Row className='about' justify='center' align='middle'>
       <Col style={{ width: '100%' }}>
-        <Row justify='center' className='about_header'>
-          <div>
-            <h1>Sobre Mi</h1>
-            <h2 className='line_trought'>
-              <span>Quien soy?</span>
-            </h2>
-          </div>
-        </Row>
-
+        <NavHead txtMain='Sobre Mi' txt='Quien soy?' />
         <Row justify='space-around' align='middle'>
           <Col style={{}}>
             <Image
