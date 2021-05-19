@@ -12,6 +12,9 @@ html {
   background-color: #2d88ff;
   color: #fff;
 }
+.navbar-mobile {
+  background-color: #242526;
+}
 .img_circle {
   border-radius: 50%;
   border: 2px solid #2d88ff;

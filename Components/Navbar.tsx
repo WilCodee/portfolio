@@ -1,4 +1,29 @@
-const Navbar = () => {
+import { connect } from 'react-redux'
+import { navMobileSee, navMobileNotSee } from '../redux/actionCreator'
+
+type stateTypes = {
+  navMobileReducer: { nav: boolean }
+}
+
+type ownProps = {
+  navMobileState: { nav: boolean }
+  navSeeView: () => void
+  navNotSeeView: () => void
+}
+
+const Navbar = ({ navMobileState, navSeeView, navNotSeeView }: ownProps) => {
+  const { nav }: { nav: boolean } = navMobileState
+
+  //active o oculta el navbar
+  const navVisible = (): void => {
+    nav ? navNotSeeView() : navSeeView()
+  }
+
+  //oculta el navbar cuando hace click en algun enlace
+  const hideNavMobile = (): void => {
+    navNotSeeView()
+  }
+
   return (
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
@@ -14,25 +39,29 @@ const Navbar = () => {
           aria-label='menu'
           aria-expanded='false'
           data-target='navbarBasicExample'
+          onClick={navVisible}
         >
           <span aria-hidden='true' />
           <span aria-hidden='true' />
           <span aria-hidden='true' />
         </a>
       </div>
-      <div id='navbarBasicExample' className='navbar-menu'>
+      <div
+        id='navbarBasicExample'
+        className={`navbar-menu navbar-mobile ${nav ? 'is-active' : ''} `}
+      >
         <div className='navbar-start'>
           <a className='navbar-item'>Inicio</a>
-          <a href='#about' className='navbar-item'>
+          <a href='#about' onClick={hideNavMobile} className='navbar-item'>
             Sobre mi
           </a>
-          <a href='#skills' className='navbar-item'>
+          <a href='#skills' onClick={hideNavMobile} className='navbar-item'>
             Skills
           </a>
-          <a href='#proyects' className='navbar-item'>
+          <a href='#proyects' onClick={hideNavMobile} className='navbar-item'>
             Proyectos
           </a>
-          <a href='#contact' className='navbar-item'>
+          <a href='#contact' onClick={hideNavMobile} className='navbar-item'>
             Contacto
           </a>
         </div>
@@ -46,4 +75,17 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+const mapStateToProps = (state: stateTypes) => ({
+  navMobileState: state.navMobileReducer,
+})
+
+const mapDispatchToProps = (dispatch: any) => ({
+  navSeeView() {
+    dispatch(navMobileSee())
+  },
+  navNotSeeView() {
+    dispatch(navMobileNotSee())
+  },
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar)
