@@ -30,7 +30,7 @@ const styleForm = {
 
 const Contact = () => {
   return (
-    <Row className='contact' justify='center' align='middle'>
+    <Row className='contact' justify='center' align='middle' id='contact'>
       <Col style={{ width: '80%' }}>
         <NavHead txtMain='Contacto' txt='get in touch' />
         <Row style={{ width: '100%' }} gutter={[16, 16]} justify='space-around'>

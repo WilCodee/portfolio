@@ -3,7 +3,7 @@ import NavHead from './atoms/NavHead'
 
 const About = () => {
   return (
-    <Row className='about' justify='center' align='middle'>
+    <Row className='about' justify='center' align='middle' id='about'>
       <Col style={{ width: '100%' }}>
         <NavHead txtMain='Sobre Mi' txt='Quien soy?' />
         <Row justify='space-around' align='middle'>

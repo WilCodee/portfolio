@@ -1,5 +1,6 @@
 html {
   background-color: #18191a;
+  scroll-behavior: smooth;
 }
 .navbar {
   background-color: #242526;

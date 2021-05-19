@@ -12,7 +12,7 @@ const grid = {
 
 const Skills = (): JSX.Element => {
   return (
-    <Row className='about' justify='center' align='middle'>
+    <Row className='about' justify='center' align='middle' id='skills'>
       <Col style={{ width: '100%' }}>
         <NavHead txtMain='Mis Skills' txt='mis conocimientos' />
         <Row

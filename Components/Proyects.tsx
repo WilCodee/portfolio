@@ -32,7 +32,7 @@ const styleParagraph: CSSProperties = {
 
 const Proyects = (): JSX.Element => {
   return (
-    <Row justify='center' className='proyects'>
+    <Row justify='center' className='proyects' id='proyects'>
       <Col style={{ width: '80%' }}>
         {/* titulo de cada articulo */}
         <NavHead txtMain='Mis Proyectos' txt='all proyects' />

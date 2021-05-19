@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar'
 import Proyects from '../Components/Proyects'
 import Skills from '../Components/Skills'
 
-const IndexPage = () => (
+const IndexPage = (): JSX.Element => (
   <>
     <Navbar />
     <Inicio />
