@@ -13,10 +13,10 @@ const Inicio = (): JSX.Element => {
             </h1>
           </div>
         </Col>
-        <Col style={{ background: 'black' }}>
+        <Col>
           <Image
             className='img_circle'
-            width={350}
+            width={250}
             preview={false}
             src='/photoProfilewithoutback.png'
           />

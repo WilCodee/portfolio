@@ -7,11 +7,11 @@ const About = () => {
       <Col style={{ width: '80%' }}>
         <NavHead txtMain='Sobre Mi' txt='Quien soy?' />
         <Row justify='space-around' align='middle'>
-          <Col style={{}}>
+          <Col>
             <Image
               src='/photoProfilewithoutback.png'
               preview={false}
-              width={300}
+              width={250}
             />
           </Col>
           <Col style={{}}>
