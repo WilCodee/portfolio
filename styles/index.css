@@ -96,3 +96,18 @@ html {
   text-decoration: underline;
   text-decoration-color: #2d88ff;
 }
+
+/* classes de pagina contacto*/
+.contact {
+  margin-top: 5em;
+  color: #fff;
+}
+.contact_logo {
+  width: 30px;
+}
+.contact_h2 {
+  color: #2d88ff;
+}
+.contact_items {
+  margin-left: 0.5em;
+}

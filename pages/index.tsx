@@ -1,4 +1,5 @@
 import About from '../Components/About'
+import Contact from '../Components/Contact'
 import Inicio from '../Components/Inicio'
 import Navbar from '../Components/Navbar'
 import Proyects from '../Components/Proyects'
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <About />
     <Skills />
     <Proyects />
+    <Contact />
   </>
 )
 
