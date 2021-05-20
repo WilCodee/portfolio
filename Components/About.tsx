@@ -33,8 +33,10 @@ const About = () => {
                 lorem ipsum
               </p>
             </Row>
-            <Row justify='center'>
-              <Button type='primary'>Mi CV</Button>
+            <Row justify='space-around'>
+              <Button type='primary' href='/CV.pdf' download='wilcv'>
+                Descargar CV
+              </Button>
             </Row>
           </Col>
         </Row>
