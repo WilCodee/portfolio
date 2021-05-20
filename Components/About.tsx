@@ -9,7 +9,7 @@ const About = () => {
         <Row justify='space-around' align='middle'>
           <Col>
             <Image
-              src='/photoProfilewithoutback.png'
+              src='https://lh3.googleusercontent.com/QwW-vzJXpfN8-omZ5k7-AI-7MAnT7wkbB_mdAbmHqoqLkqRONztLfAjpiGzuqpgGVEbT3ZpxoTPdHT725nsuciFgqb1x1L-g6v7SA8tlZ8rqjbKldsTkFj79X3kf0v-Ju265HCZv9zdg-ISYMzubit3ZJdO-bvn1rRnZKKqwxSOnctfwDB-RR-z3kWGN4s19AUyCMR5qL9mIh9yZS0RXUZbInCUTdji4uyoBhc5Q7CkBBBaML_W01TNBjdqlIrL-unqnAHgMQXMRZlKtFJS1ics-3Fdf90mutn1yW38-hP3Tmja-51N4PjZdHT1MIa15Yh8seRwD-S9BbkzvIUoWa1NgtQIWIEn-6fRHeewdmWlGrtbJAGaQz69Xych_w4uT4ZHDFou8oCigVceDMCxR_1b0pSbXKlI__nIWMkkegFbeVtrYi1a2P34baKJWO32WTtm3IRpIqYAkE9nsP_F27yh2eXpivlWXdBSqfyKJD2m7XpNPw1XgJZVxl-vFWmvwji2UwpI4MT3JRhBMHBekhufJ1UYpeYpe4BdV8CshNbeV2kpCj3Mcvbt-adUBKbx8KrkqWh2Nglvy2TT8s9RhgKGpK4IzLQUWlNTglWVDishNTrb8a9tfstyF37RGYuVNro21s9OfbK_TnwoiZ_PIo_Ohn7_2kI-gP7Us-5LABhdRzRSs0gJwAdm3NaYQMcqMYUa9PCkXGdEFhd1uvFuYAh2K=w852-h639-no?authuser=0'
               preview={false}
               width={250}
             />

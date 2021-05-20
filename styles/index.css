@@ -17,7 +17,7 @@ html {
 }
 .img_circle {
   border-radius: 50%;
-  border: 2px solid #2d88ff;
+  object-fit: cover;
 }
 .main_page {
   background-image: url('https://wallpaperaccess.com/full/2918065.jpg');
