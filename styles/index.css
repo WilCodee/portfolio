@@ -96,7 +96,11 @@ html {
   padding: 1em;
   background-color: #282828;
 }
+.card_href {
+  color: #fff;
+}
 .card_href:hover {
+  color: #fff;
   text-decoration: underline;
   text-decoration-color: #2d88ff;
 }

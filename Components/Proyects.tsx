@@ -49,7 +49,13 @@ const Proyects = (): JSX.Element => {
               <Paragraph style={{ ...styleParagraph }} ellipsis>
                 e-commerce venta de Ropa
               </Paragraph>
-              <span className='card_href'>Visitar Pagina</span>
+              <a
+                href='https://mi-tienda-online.vercel.app'
+                target='_blank'
+                className='card_href'
+              >
+                Visitar Pagina
+              </a>
             </Card>
           </Col>
           <Col {...grid}>
@@ -61,7 +67,13 @@ const Proyects = (): JSX.Element => {
               <Paragraph style={{ ...styleParagraph }} ellipsis>
                 Mi portafolio
               </Paragraph>
-              <span className='card_href'>Visitar Pagina</span>
+              <a
+                href='https://wilinston-quispe.vercel.app/'
+                target='_blank'
+                className='card_href'
+              >
+                Visitar Pagina
+              </a>
             </Card>
           </Col>
         </Row>
