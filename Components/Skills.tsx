@@ -23,16 +23,15 @@ const Skills = (): JSX.Element => {
           <Col {...grid} style={{}}>
             <Row justify='center'>
               <h1 className='about_content'>
-                Mis conocimientos en base a mi experiencia
+                Mis conocimientos en base a mi <a>Experiencia</a>
               </h1>
             </Row>
             <Row justify='center'>
               <p style={{ width: '400px' }}>
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum
+                Soy apasionado con las tecnologías que trabajo, me gusta
+                trabajar con buenas prácticas en el desarrollo he escogido este
+                stack de tecnologías porque sé que son una de las más modernas y
+                más eficientes
               </p>
             </Row>
           </Col>

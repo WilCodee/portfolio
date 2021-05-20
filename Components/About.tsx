@@ -22,15 +22,17 @@ const About = () => {
             </Row>
             <Row>
               <p style={{ width: '400px' }}>
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum
+                Soy un apasionado por la tecnología me gusta estar en continuo
+                aprendizaje porque la tecnología avanza muy rápido, soy un
+                creador de contenido comparto mis conocimientos en la plataforma{' '}
+                <a
+                  href='https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug'
+                  target='_blank'
+                >
+                  YouTube
+                </a>{' '}
+                me gusta trabajar con tecnologías modernas para el desarrollo
+                web soy una persona que lucho por mis sueños y metas
               </p>
             </Row>
             <Row justify='space-around'>

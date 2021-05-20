@@ -38,9 +38,9 @@ const Contact = () => {
             <Row>
               <h2 className='contact_h2'>Contactame</h2>
               <p>
-                disgssimos harum corporisfuga corrupti disgssimos harum
-                corporisfuga corrupti lorem ipsum dolor sit amet consectettur
-                adipising elit
+                Para contactarte conmigo puedes enviar un correo llenando el
+                formulario o por las redes sociales. Importante solo para
+                trabajos Serios
               </p>
             </Row>
             <Row>
