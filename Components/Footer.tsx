@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => {
           </p>
         </Row>
         <Row justify='center'>
-          <p>
+          <div>
             <a href='https://web.facebook.com/wil.quispe.1614' target='_blank'>
               <img className='footer_social' src='/facebook.svg' />
             </a>
@@ -24,7 +24,7 @@ const Footer = (): JSX.Element => {
             >
               <img className='footer_social' src='/youtube.svg' />
             </a>
-          </p>
+          </div>
         </Row>
       </Col>
     </Row>

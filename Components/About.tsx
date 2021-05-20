@@ -17,7 +17,7 @@ const About = () => {
           <Col style={{}}>
             <Row>
               <h1 className='about_content'>
-                Soy Wilinston y soy un <a>Desarrollador</a>
+                Soy Wilinston y soy un <span>Desarrollador</span>
               </h1>
             </Row>
             <Row>

@@ -20,10 +20,10 @@ const Skills = (): JSX.Element => {
           justify='space-around'
           align='middle'
         >
-          <Col {...grid} style={{}}>
+          <Col {...grid}>
             <Row justify='center'>
               <h1 className='about_content'>
-                Mis conocimientos en base a mi <a>Experiencia</a>
+                Mis conocimientos en base a mi <span>Experiencia</span>
               </h1>
             </Row>
             <Row justify='center'>
@@ -35,7 +35,7 @@ const Skills = (): JSX.Element => {
               </p>
             </Row>
           </Col>
-          <Col {...grid} style={{}}>
+          <Col {...grid}>
             <Row justify='center'>
               <Col style={{ width: '50%' }}>
                 <Row style={{ width: '100%' }}>
