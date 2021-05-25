@@ -1,6 +1,7 @@
-import { Button, Col, Form, Input, Row } from 'antd'
+import { Button, Col, Form, Input, message, Row } from 'antd'
 import ContactItem from './atoms/ContactItem'
 import NavHead from './atoms/NavHead'
+import emailjs from 'emailjs-com'
 
 const gridMain = {
   xs: 24,
@@ -29,6 +30,28 @@ const styleForm = {
 }
 
 const Contact = () => {
+  // envio email utilizando el servicio emailjs
+  const sendEmail = (e: any): void => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_jcuzbli',
+        'template_m6xltea',
+        e.target as HTMLFormElement,
+        'user_0Hjr5WWn82n2t2F8e1uxT'
+      )
+      .then(
+        result => {
+          message.success(`Correo enviado`)
+          location.reload()
+        },
+        error => {
+          message.error('Fallo al enviar' + error)
+        }
+      )
+  }
+
   return (
     <Row className='contact' justify='center' align='middle' id='contact'>
       <Col style={{ width: '80%' }}>
@@ -65,7 +88,7 @@ const Contact = () => {
           </Col>
           <Col {...gridMain}>
             <h2 className='contact_h2'>Enviame un mensaje</h2>
-            <Form>
+            <form onSubmit={sendEmail}>
               <Row justify='center'>
                 <Col {...gridForm}>
                   <Form.Item
@@ -73,7 +96,11 @@ const Contact = () => {
                     name='name'
                     rules={[{ required: true, message: 'campo requerido!' }]}
                   >
-                    <Input placeholder='Nombre' style={{ ...styleForm }} />
+                    <Input
+                      name='name'
+                      placeholder='Nombre'
+                      style={{ ...styleForm }}
+                    />
                   </Form.Item>
                 </Col>
                 <Col {...gridForm}>
@@ -81,14 +108,31 @@ const Contact = () => {
                     name='subject'
                     rules={[{ required: true, message: 'campo requerido!' }]}
                   >
-                    <Input placeholder='Asunto' style={{ ...styleForm }} />
+                    <Input
+                      name='subject'
+                      placeholder='Asunto'
+                      style={{ ...styleForm }}
+                    />
                   </Form.Item>
                 </Col>
               </Row>
 
-              <Form.Item name='company'>
+              <Form.Item
+                name='email'
+                rules={[
+                  {
+                    required: true,
+                    message: 'campo requerido!',
+                  },
+                  {
+                    type: 'email',
+                    message: 'correo invalido',
+                  },
+                ]}
+              >
                 <Input
-                  placeholder='Empresa opcional'
+                  name='email'
+                  placeholder='Correo'
                   style={{ ...styleForm }}
                 />
               </Form.Item>
@@ -98,6 +142,7 @@ const Contact = () => {
                 rules={[{ required: true, message: 'campo requerido!' }]}
               >
                 <Input.TextArea
+                  name='message'
                   placeholder='Mensaje...'
                   style={{ ...styleForm }}
                 />
@@ -108,7 +153,7 @@ const Contact = () => {
                   Submit
                 </Button>
               </Row>
-            </Form>
+            </form>
           </Col>
         </Row>
       </Col>
