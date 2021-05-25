@@ -5,9 +5,10 @@ class MyDoc extends Document {
     return (
       <Html>
         <Head>
+          <link rel='icon' href='/photoProfilewithoutback.png' />
           <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+            rel='stylesheet'
+            href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'
           />
         </Head>
         <body>
