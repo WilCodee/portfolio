@@ -76,6 +76,25 @@ const Proyects = (): JSX.Element => {
               </a>
             </Card>
           </Col>
+          <Col {...grid}>
+            <Card
+              hoverable
+              style={{ ...styleCard }}
+              cover={<img alt='example' src='/api-ecommerce.png' />}
+            >
+              <Paragraph style={{ ...styleParagraph }} ellipsis>
+                Creacion de API
+              </Paragraph>
+              <Paragraph
+                ellipsis={{ rows: 1, expandable: true, symbol: 'mas' }}
+                className='card_href'
+                style={{ color: '#fff', marginBottom: '0' }}
+              >
+                creación de una API con node, graphql y mongodb para una tienda
+                online 
+              </Paragraph>
+            </Card>
+          </Col>
         </Row>
       </Col>
     </Row>
