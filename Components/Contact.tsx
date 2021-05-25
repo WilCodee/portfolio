@@ -42,7 +42,7 @@ const Contact = () => {
         'user_0Hjr5WWn82n2t2F8e1uxT'
       )
       .then(
-        result => {
+        () => {
           message.success(`Correo enviado`)
           location.reload()
         },
