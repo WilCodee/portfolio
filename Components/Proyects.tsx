@@ -1,36 +1,6 @@
-import { Typography, Card, Col, Row } from 'antd'
-import { CSSProperties } from 'react'
+import { Col, Row } from 'antd'
 import NavHead from './atoms/NavHead'
 import ProyectsCard from './atoms/ProyectsCard'
-import ShowList from './atoms/ShowList'
-
-//la gria del para diferentes pantallas
-const grid = {
-  xs: 24,
-  sm: 12,
-  md: 12,
-  lg: 8,
-  xl: 6,
-  xxl: 6,
-}
-
-const { Paragraph } = Typography
-
-//estilos para cada card
-const styleCard = {
-  background: '#282828',
-  padding: '1em',
-  border: 'none',
-  borderRadius: '15px',
-  color: '#fff',
-}
-
-//estilo para el titulo de card
-const styleParagraph: CSSProperties = {
-  color: '#2d88ff',
-  fontSize: '1.3em',
-  fontWeight: 'bold',
-}
 
 const Proyects = (): JSX.Element => {
   return (
