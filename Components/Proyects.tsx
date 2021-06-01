@@ -1,6 +1,8 @@
 import { Typography, Card, Col, Row } from 'antd'
 import { CSSProperties } from 'react'
 import NavHead from './atoms/NavHead'
+import ProyectsCard from './atoms/ProyectsCard'
+import ShowList from './atoms/ShowList'
 
 //la gria del para diferentes pantallas
 const grid = {
@@ -38,81 +40,62 @@ const Proyects = (): JSX.Element => {
         <NavHead txtMain='Mis Proyectos' txt='all proyects' />
 
         <Row justify='center' gutter={[16, 16]}>
-          <Col {...grid}>
-            <Card
-              style={{
-                ...styleCard,
-              }}
-              hoverable
-              cover={<img alt='example' src='/Inicio-Goshop.png' />}
-            >
-              <Paragraph style={{ ...styleParagraph }} ellipsis>
-                e-commerce venta de Ropa
-              </Paragraph>
-              <a
-                href='https://mi-tienda-online.vercel.app'
-                target='_blank'
-                className='card_href'
-              >
-                Visitar Pagina
-              </a>
-            </Card>
-          </Col>
-          <Col {...grid}>
-            <Card
-              hoverable
-              style={{ ...styleCard }}
-              cover={<img alt='example' src='/porfolio.png' />}
-            >
-              <Paragraph style={{ ...styleParagraph }} ellipsis>
-                Mi portafolio
-              </Paragraph>
-              <a
-                href='https://wilinston-quispe.vercel.app/'
-                target='_blank'
-                className='card_href'
-              >
-                Visitar Pagina
-              </a>
-            </Card>
-          </Col>
-          <Col {...grid}>
-            <Card
-              hoverable
-              style={{ ...styleCard }}
-              cover={<img alt='example' src='/api-ecommerce.png' />}
-            >
-              <Paragraph style={{ ...styleParagraph }} ellipsis>
-                Creacion de API
-              </Paragraph>
-              <Paragraph
-                ellipsis={{ rows: 1, expandable: true, symbol: 'mas' }}
-                className='card_href'
-                style={{ color: '#fff', marginBottom: '0' }}
-              >
-                creación de una API con node, graphql y mongodb para una tienda
-                online 
-              </Paragraph>
-            </Card>
-          </Col>
-          <Col {...grid}>
-            <Card
-              hoverable
-              style={{ ...styleCard }}
-              cover={<img alt='example' src='/YT-clone.png' />}
-            >
-              <Paragraph style={{ ...styleParagraph }} ellipsis>
-                Youtube Clone
-              </Paragraph>
-              <a
-                href='https://yt-clone-two.vercel.app/'
-                target='_blank'
-                className='card_href'
-              >
-                Visitar Pagina
-              </a>
-            </Card>
-          </Col>
+          <ProyectsCard
+            img='/Inicio-Goshop.png'
+            title='Ecommerce venta de Ropas'
+            href='https://mi-tienda-online.vercel.app/'
+            dataList={[
+              'JavaScript',
+              'React.js',
+              'Redux',
+              'Antdesign',
+              'Css',
+              'Bulma',
+              'Next.js',
+              'Git',
+              'Apollo Client',
+              'Paypal',
+              'Cloudinary',
+            ]}
+          />
+          <ProyectsCard
+            img='/porfolio.png'
+            title='Mi Portafolio'
+            href='https://wilinston-quispe.vercel.app/'
+            dataList={[
+              'TypeScript',
+              'Css',
+              'Next.js',
+              'React.js',
+              'Antdesign',
+              'Git',
+            ]}
+          />
+          <ProyectsCard
+            img='api-ecommerce.png'
+            title='Creacion de API'
+            description='creación de una API para una tienda online'
+            dataList={[
+              'Node.js',
+              'MongoDB',
+              'Graphql',
+              'Cloudinary',
+              'Mongoose',
+            ]}
+          />
+          <ProyectsCard
+            img='/YT-clone.png'
+            title='YT Clone'
+            href='https://yt-clone-two.vercel.app/'
+            dataList={[
+              'TypeScript',
+              'Next.js',
+              'Css',
+              'React.js',
+              'Git',
+              'API Youtube',
+            ]}
+          />
         </Row>
       </Col>
     </Row>
