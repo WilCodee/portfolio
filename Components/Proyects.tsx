@@ -44,7 +44,7 @@ const Proyects = (): JSX.Element => {
                 ...styleCard,
               }}
               hoverable
-              cover={<img alt='example' src='/e-commerce.png' />}
+              cover={<img alt='example' src='/Inicio-Goshop.png' />}
             >
               <Paragraph style={{ ...styleParagraph }} ellipsis>
                 e-commerce venta de Ropa
@@ -93,6 +93,24 @@ const Proyects = (): JSX.Element => {
                 creación de una API con node, graphql y mongodb para una tienda
                 online 
               </Paragraph>
+            </Card>
+          </Col>
+          <Col {...grid}>
+            <Card
+              hoverable
+              style={{ ...styleCard }}
+              cover={<img alt='example' src='/YT-clone.png' />}
+            >
+              <Paragraph style={{ ...styleParagraph }} ellipsis>
+                Youtube Clone
+              </Paragraph>
+              <a
+                href='https://yt-clone-two.vercel.app/'
+                target='_blank'
+                className='card_href'
+              >
+                Visitar Pagina
+              </a>
             </Card>
           </Col>
         </Row>
