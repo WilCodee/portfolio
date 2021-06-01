@@ -10,7 +10,7 @@ const ShowList = ({ data }: dataTecnologi): JSX.Element => {
   }
 
   return (
-    <Row justify='start'>
+    <Row justify='center'>
       <Button size='small' type='link' onClick={showList}>
         Mostrar tecnologías utilizadas
       </Button>
@@ -19,7 +19,7 @@ const ShowList = ({ data }: dataTecnologi): JSX.Element => {
           display: `${ShowList ? 'block' : 'none'}`,
         }}
         size='small'
-        split={false}
+        split
         dataSource={data}
         renderItem={(item: string): JSX.Element => (
           <List.Item
