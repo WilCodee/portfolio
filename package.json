@@ -8,6 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "antd": "^4.15.5",
     "emailjs-com": "^2.6.4",
     "next": "latest",

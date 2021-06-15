@@ -138,3 +138,30 @@ html {
   width: 30px;
   margin-right: 0.5em;
 }
+
+/* animar navbar show */
+.navbar-menu.is-active {
+  animation: navAnim 0.2s ease-in-out;
+}
+
+@keyframes navAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 215.33px;
+  }
+}
+
+/* animarr cada card */
+.cardAnimate:hover {
+  animation: pulse;
+  animation-duration: 2s;
+}

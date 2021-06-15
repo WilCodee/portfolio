@@ -10,6 +10,12 @@ class MyDoc extends Document {
             rel='stylesheet'
             href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'
           />
+          <head>
+            <link
+              rel='stylesheet'
+              href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
+            />
+          </head>
         </Head>
         <body>
           <Main></Main>

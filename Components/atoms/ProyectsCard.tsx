@@ -35,7 +35,7 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
   const { img, title, description, href, dataList } = props
 
   return (
-    <Col {...grid}>
+    <Col {...grid} className='cardAnimate'>
       <Card
         hoverable
         style={{ ...styleCard }}
