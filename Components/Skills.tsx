@@ -41,7 +41,7 @@ const Skills = (): JSX.Element => {
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
                     <Image src="/react.svg" width={20} preview={false} />
-                    <Progress showInfo={false} percent={60} status="active" />
+                    <Progress showInfo={false} percent={75} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
@@ -70,7 +70,19 @@ const Skills = (): JSX.Element => {
                       width={20}
                       preview={false}
                     />
-                    <Progress showInfo={false} percent={65} status="active" />
+                    <Progress showInfo={false} percent={75} status="active" />
+                  </div>
+                </Row>
+                <Row style={{ width: '100%' }}>
+                  <div style={{ width: '100%' }}>
+                    <Image src="/typescript.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={73} status="active" />
+                  </div>
+                </Row>
+                <Row style={{ width: '100%' }}>
+                  <div style={{ width: '100%' }}>
+                    <Image src="/tailwindcss.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={55} status="active" />
                   </div>
                 </Row>
               </Col>
