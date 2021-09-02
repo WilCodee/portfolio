@@ -12,21 +12,21 @@ const grid = {
 
 const Skills = (): JSX.Element => {
   return (
-    <Row className='about' justify='center' align='middle' id='skills'>
+    <Row className="about" justify="center" align="middle" id="skills">
       <Col style={{ width: '80%' }}>
-        <NavHead txtMain='Mis Skills' txt='Conocimientos' />
+        <NavHead txtMain="Mis Skills" txt="Conocimientos" />
         <Row
           style={{ width: '100%', margin: '1em 0 0' }}
-          justify='space-around'
-          align='middle'
+          justify="space-around"
+          align="middle"
         >
           <Col {...grid}>
-            <Row justify='center'>
-              <h1 className='about_content'>
+            <Row justify="center">
+              <h1 className="about_content">
                 Mis conocimientos en base a mi <span>Experiencia</span>
               </h1>
             </Row>
-            <Row justify='center'>
+            <Row justify="center">
               <p style={{ width: '400px' }}>
                 Soy apasionado con las tecnologías que trabajo, me gusta
                 trabajar con buenas prácticas en el desarrollo he escogido este
@@ -36,40 +36,41 @@ const Skills = (): JSX.Element => {
             </Row>
           </Col>
           <Col {...grid}>
-            <Row justify='center'>
+            <Row justify="center">
               <Col style={{ width: '50%' }}>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src='/react.svg' width={20} />
-                    <Progress showInfo={false} percent={60} status='active' />
+                    <Image src="/react.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={60} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src='/graphql.svg' width={20} />
-                    <Progress showInfo={false} percent={65} status='active' />
+                    <Image src="/graphql.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src='/javascript.svg' width={20} />
-                    <Progress showInfo={false} percent={70} status='active' />
+                    <Image src="/javascript.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={70} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src='/ant-design.svg' width={20} />
-                    <Progress showInfo={false} percent={65} status='active' />
+                    <Image src="/ant-design.svg" width={20} preview={false} />
+                    <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
                     <Image
-                      src='/nextjs-icon.svg'
-                      className='nextjs'
+                      src="/nextjs-icon.svg"
+                      className="nextjs"
                       width={20}
+                      preview={false}
                     />
-                    <Progress showInfo={false} percent={65} status='active' />
+                    <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
               </Col>
