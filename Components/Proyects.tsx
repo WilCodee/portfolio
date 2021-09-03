@@ -12,9 +12,9 @@ const Proyects = (): JSX.Element => {
         {/* titulo de cada articulo */}
 
         {localLanguage ? (
-          <NavHead txtMain="Mis Proyectos" txt="all proyects" />
+          <NavHead txtMain="Mis Proyectos" />
         ) : (
-          <NavHead txtMain="My Proyects" txt="all proyects" />
+          <NavHead txtMain="My Proyects" />
         )}
 
         <Row justify="center" gutter={[16, 16]}>

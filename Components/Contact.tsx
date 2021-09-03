@@ -60,9 +60,9 @@ const Contact = () => {
     <Row className="contact" justify="center" align="middle" id="contact">
       <Col style={{ width: '80%' }}>
         {localLanguage ? (
-          <NavHead txtMain="Contacto" txt="get in touch" />
+          <NavHead txtMain="Contacto" />
         ) : (
-          <NavHead txtMain="Contact" txt="get in touch" />
+          <NavHead txtMain="Contact" />
         )}
 
         <Row style={{ width: '100%' }} gutter={[16, 16]} justify="space-around">

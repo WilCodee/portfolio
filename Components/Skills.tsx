@@ -18,9 +18,9 @@ const Skills = (): JSX.Element => {
     <Row className="about" justify="center" align="middle" id="skills">
       <Col style={{ width: '80%' }}>
         {localLanguage ? (
-          <NavHead txtMain="Mis Skills" txt="Conocimientos" />
+          <NavHead txtMain="Mis Skills" />
         ) : (
-          <NavHead txtMain="My Skills" txt="knowledge" />
+          <NavHead txtMain="My Skills" />
         )}
         <Row
           style={{ width: '100%', margin: '1em 0 0' }}
