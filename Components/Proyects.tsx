@@ -1,19 +1,28 @@
 import { Col, Row } from 'antd'
+import { useContext } from 'react'
+import { LanguageContext } from '../Context/LanguageContext'
 import NavHead from './atoms/NavHead'
 import ProyectsCard from './atoms/ProyectsCard'
 
 const Proyects = (): JSX.Element => {
+  const { localLanguage } = useContext(LanguageContext)
   return (
-    <Row justify='center' className='proyects' id='proyects'>
+    <Row justify="center" className="proyects" id="proyects">
       <Col style={{ width: '80%' }}>
         {/* titulo de cada articulo */}
-        <NavHead txtMain='Mis Proyectos' txt='all proyects' />
 
-        <Row justify='center' gutter={[16, 16]}>
+        {localLanguage ? (
+          <NavHead txtMain="Mis Proyectos" txt="all proyects" />
+        ) : (
+          <NavHead txtMain="My Proyects" txt="all proyects" />
+        )}
+
+        <Row justify="center" gutter={[16, 16]}>
           <ProyectsCard
-            img='/Inicio-Goshop.png'
-            title='Ecommerce venta de Ropas'
-            href='https://mi-tienda-online.vercel.app/'
+            img="/Inicio-Goshop.png"
+            title="Ecommerce venta de Ropas"
+            titleEnglish="Ecommerce sale of clothes"
+            href="https://mi-tienda-online.vercel.app/"
             dataList={[
               'JavaScript',
               'React.js',
@@ -29,9 +38,10 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img='/porfolio.png'
-            title='Mi Portafolio'
-            href='https://wilinston-quispe.vercel.app/'
+            img="/porfolio.png"
+            title="Mi Portafolio"
+            titleEnglish="My Portfolio"
+            href="https://wilinston-quispe.vercel.app/"
             dataList={[
               'TypeScript',
               'Css',
@@ -42,9 +52,11 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img='api-ecommerce.png'
-            title='Creacion de API'
-            description='creación de una API para una tienda online'
+            img="api-ecommerce.png"
+            title="Creacion de API"
+            titleEnglish="API creation"
+            description="creación de una API para una tienda online"
+            descriptionEnglish="creating an API for an online store"
             dataList={[
               'Node.js',
               'MongoDB',
@@ -54,9 +66,10 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img='/YT-clone.png'
-            title='YT Clone'
-            href='https://yt-clone-two.vercel.app/'
+            img="/YT-clone.png"
+            title="YT Clone"
+            titleEnglish="YT Clone"
+            href="https://yt-clone-two.vercel.app/"
             dataList={[
               'TypeScript',
               'Next.js',

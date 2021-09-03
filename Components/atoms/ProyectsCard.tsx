@@ -1,5 +1,6 @@
 import { Card, Col, Row, Typography } from 'antd'
-import { CSSProperties } from 'react'
+import { CSSProperties, useContext } from 'react'
+import { LanguageContext } from '../../Context/LanguageContext'
 import { CartInterface } from '../../Interfaces'
 import ShowList from './ShowList'
 
@@ -32,33 +33,43 @@ const styleParagraph: CSSProperties = {
 }
 
 const ProyectsCard = (props: CartInterface): JSX.Element => {
-  const { img, title, description, href, dataList } = props
+  const {
+    img,
+    title,
+    description,
+    href,
+    dataList,
+    titleEnglish,
+    descriptionEnglish,
+  } = props
+
+  const { localLanguage } = useContext(LanguageContext)
 
   return (
-    <Col {...grid} className='cardAnimate'>
+    <Col {...grid} className="cardAnimate">
       <Card
         hoverable
         style={{ ...styleCard }}
-        cover={<img alt='example' src={img} />}
+        cover={<img alt="example" src={img} />}
       >
-        <Row justify='center'>
+        <Row justify="center">
           <Col>
-            <Row justify='center'>
+            <Row justify="center">
               <Paragraph style={{ ...styleParagraph }} ellipsis>
-                {title}
+                {localLanguage ? title : titleEnglish}
               </Paragraph>
             </Row>
-            <Row justify='center'>
+            <Row justify="center">
               {href ? (
-                <a href={href} target='_blank' className='card_href'>
-                  Visitar Pagina
+                <a href={href} target="_blank" className="card_href">
+                  {localLanguage ? 'Visitar Pagina' : 'Go to the Page'}
                 </a>
               ) : (
                 <Paragraph
                   ellipsis={{ rows: 1, expandable: true, symbol: 'mas' }}
                   style={{ color: '#fff', marginBottom: '0' }}
                 >
-                  {description}
+                  {localLanguage ? description : descriptionEnglish}
                 </Paragraph>
               )}
             </Row>

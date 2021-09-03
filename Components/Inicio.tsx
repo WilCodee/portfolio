@@ -1,17 +1,35 @@
-import { Col, Image, Row } from 'antd'
+import { Button, Col, Image, Row } from 'antd'
+import { useContext } from 'react'
+import { LanguageContext } from '../Context/LanguageContext'
 
 const Inicio = (): JSX.Element => {
+  const { setLocalLanguage, localLanguage } = useContext(LanguageContext)
+
+  const changeLanguage = () => {
+    setLocalLanguage(!localLanguage)
+  }
+
   return (
     <>
       <Row justify="space-around" className="main_page" align="middle">
         <Col>
-          <div>
-            <span className="before_name">Hola, mi nombre es</span>
-            <h1 className="name">
-              Wilinston
-              <span> Quispe</span>
-            </h1>
-          </div>
+          {localLanguage ? (
+            <div>
+              <span className="before_name">Hola, mi nombre es</span>
+              <h1 className="name">
+                Wilinston
+                <span> Quispe</span>
+              </h1>
+            </div>
+          ) : (
+            <div>
+              <span className="before_name">Hi, my name is</span>
+              <h1 className="name">
+                Wilinston
+                <span> Quispe</span>
+              </h1>
+            </div>
+          )}
         </Col>
         <Col style={{ marginBottom: '80px' }}>
           <Image
@@ -21,6 +39,13 @@ const Inicio = (): JSX.Element => {
             preview={false}
             src="/one.jpg"
           />
+          <Row justify="center" style={{ marginTop: '50px' }}>
+            <Col>
+              <Button type="primary" size="small" onClick={changeLanguage}>
+                {`${localLanguage ? 'cambiar idioma' : 'change language'}`}
+              </Button>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </>

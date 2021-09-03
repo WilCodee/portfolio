@@ -120,6 +120,7 @@ html {
   color: #2d88ff;
 }
 .contact_items {
+  margin-top: 0.3em;
   margin-left: 0.5em;
 }
 
@@ -131,8 +132,9 @@ html {
   margin-top: 2.5em;
 }
 .footer_name {
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #2d88ff;
+  color: #2684ff;
 }
 .footer_social {
   width: 30px;
