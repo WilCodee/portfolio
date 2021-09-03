@@ -9,9 +9,9 @@ const About = () => {
     <Row className="about" justify="center" align="middle" id="about">
       <Col style={{ width: '80%' }}>
         {localLanguage ? (
-          <NavHead txtMain="Sobre mi" txt="Quien soy?" />
+          <NavHead txtMain="Sobre mi" />
         ) : (
-          <NavHead txtMain="About me" txt="Who am i?" />
+          <NavHead txtMain="About me" />
         )}
         <Row justify="space-around" align="middle">
           <Col>
