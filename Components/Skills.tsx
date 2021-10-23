@@ -30,12 +30,12 @@ const Skills = (): JSX.Element => {
           <Col {...grid}>
             {localLanguage ? (
               <>
-                <Row justify="center">
+                <Row>
                   <h1 className="about_content">
                     Mis conocimientos en base a mi <span>Experiencia</span>
                   </h1>
                 </Row>
-                <Row justify="center">
+                <Row>
                   <p style={{ width: '400px' }}>
                     Soy apasionado con las tecnologías que trabajo, me gusta
                     trabajar con buenas prácticas en el desarrollo he escogido
@@ -46,12 +46,12 @@ const Skills = (): JSX.Element => {
               </>
             ) : (
               <>
-                <Row justify="center">
+                <Row>
                   <h1 className="about_content">
                     My knowledge based on my<span> experience</span>
                   </h1>
                 </Row>
-                <Row justify="center">
+                <Row>
                   <p style={{ width: '400px' }}>
                     I'm passionate about the technologies I work with, I like to
                     work with good development practices. I have chosen this
@@ -68,7 +68,7 @@ const Skills = (): JSX.Element => {
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
                     <Image src="/react.svg" width={20} preview={false} />
-                    <Progress showInfo={false} percent={75} status="active" />
+                    <Progress showInfo={false} percent={80} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
@@ -103,13 +103,13 @@ const Skills = (): JSX.Element => {
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
                     <Image src="/typescript.svg" width={20} preview={false} />
-                    <Progress showInfo={false} percent={73} status="active" />
+                    <Progress showInfo={false} percent={76} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
                     <Image src="/tailwindcss.svg" width={20} preview={false} />
-                    <Progress showInfo={false} percent={55} status="active" />
+                    <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
               </Col>
