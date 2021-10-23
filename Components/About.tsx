@@ -17,7 +17,7 @@ const About = () => {
           <Col>
             <Image
               style={{ borderRadius: '10px' }}
-              src="/two.jpg"
+              src="/img/two.jpg"
               preview={false}
               width={250}
             />

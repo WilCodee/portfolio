@@ -19,7 +19,7 @@ const Proyects = (): JSX.Element => {
 
         <Row justify="center" gutter={[16, 16]}>
           <ProyectsCard
-            img="/Inicio-Goshop.png"
+            img="/img/Inicio-Goshop.png"
             title="Ecommerce venta de Ropas"
             titleEnglish="Ecommerce sale of clothes"
             href="https://mi-tienda-online.vercel.app/"
@@ -38,7 +38,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/porfolio.png"
+            img="/img/porfolio.png"
             title="Mi Portafolio"
             titleEnglish="My Portfolio"
             href="https://wilinston-quispe.vercel.app/"
@@ -52,7 +52,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="api-ecommerce.png"
+            img="/img/api-ecommerce.png"
             title="Creacion de API"
             titleEnglish="API creation"
             description="creación de una API para una tienda online"
@@ -66,7 +66,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/YT-clone.png"
+            img="/img/YT-clone.png"
             title="YT Clone"
             titleEnglish="YT Clone"
             href="https://yt-clone-two.vercel.app/"
