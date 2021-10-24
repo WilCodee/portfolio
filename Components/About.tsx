@@ -32,7 +32,7 @@ const About = () => {
                 </Row>
                 <Row>
                   <p style={{ width: '400px' }}>
-                    Soy un apasionado por la tecnología me gusta estar en
+                    Soy un apasionado por la tecnología, me gusta estar en
                     continuo aprendizaje porque la tecnología avanza muy rápido,
                     soy un creador de contenido comparto mis conocimientos en la
                     plataforma{' '}
@@ -43,8 +43,8 @@ const About = () => {
                       YouTube
                     </a>{' '}
                     me gusta trabajar con tecnologías modernas para el
-                    desarrollo web soy una persona que lucho por mis sueños y
-                    metas
+                    desarrollo web. Me considero una joven perseverante, que
+                    lucho día a día por mis sueños y metas.
                   </p>
                 </Row>
                 <Row justify="space-around">
