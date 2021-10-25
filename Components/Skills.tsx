@@ -31,32 +31,22 @@ const Skills = (): JSX.Element => {
             {localLanguage ? (
               <>
                 <Row>
-                  <h1 className="about_content">
-                    Mis conocimientos en base a mi <span>Experiencia</span>
-                  </h1>
-                </Row>
-                <Row>
-                  <p style={{ width: '400px' }}>
+                  <p style={{ width: '400px', textAlign: 'center' }}>
                     Soy apasionado con las tecnologías que trabajo, me gusta
                     trabajar con buenas prácticas en el desarrollo he escogido
                     este stack de tecnologías porque sé que son una de las más
-                    modernas y más eficientes
+                    modernas y más eficientes.
                   </p>
                 </Row>
               </>
             ) : (
               <>
                 <Row>
-                  <h1 className="about_content">
-                    My knowledge based on my<span> experience</span>
-                  </h1>
-                </Row>
-                <Row>
-                  <p style={{ width: '400px' }}>
+                  <p style={{ width: '400px', textAlign: 'center' }}>
                     I'm passionate about the technologies I work with, I like to
                     work with good development practices. I have chosen this
                     stack of technologies because I know they are one of the
-                    most modern and efficient
+                    most modern and efficient.
                   </p>
                 </Row>
               </>

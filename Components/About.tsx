@@ -26,12 +26,13 @@ const About = () => {
             {localLanguage ? (
               <>
                 <Row>
-                  <h1 className="about_content">
-                    Soy Wilinston y soy un <span>Desarrollador</span>
-                  </h1>
-                </Row>
-                <Row>
-                  <p style={{ width: '400px' }}>
+                  <p
+                    style={{
+                      width: '400px',
+                      marginTop: '.5em',
+                      textAlign: 'center',
+                    }}
+                  >
                     Soy un apasionado por la tecnología, me gusta estar en
                     continuo aprendizaje porque la tecnología avanza muy rápido,
                     soy un creador de contenido comparto mis conocimientos en la
@@ -56,12 +57,13 @@ const About = () => {
             ) : (
               <>
                 <Row>
-                  <h1 className="about_content">
-                    I am Wilinston and I am a <span>Developer</span>
-                  </h1>
-                </Row>
-                <Row>
-                  <p style={{ width: '400px' }}>
+                  <p
+                    style={{
+                      width: '400px',
+                      marginTop: '.5em',
+                      textAlign: 'center',
+                    }}
+                  >
                     I'm passionate about technology I like to be in continuous
                     learning because technology advances very fast, I am a
                     content creator I share my knowledge on the{' '}
