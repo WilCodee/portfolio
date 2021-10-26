@@ -4,6 +4,7 @@ import NavHead from './atoms/NavHead'
 import emailjs from 'emailjs-com'
 import { LanguageContext } from '../Context/LanguageContext'
 import { useContext } from 'react'
+import { updateLocalStorage } from '../Utils/updateLocalStorage'
 
 const gridMain = {
   xs: 24,
@@ -37,7 +38,6 @@ const Contact = () => {
   // envio email utilizando el servicio emailjs
   const sendEmail = (e: any): void => {
     e.preventDefault()
-
     emailjs
       .sendForm(
         'service_jcuzbli',
@@ -48,10 +48,12 @@ const Contact = () => {
       .then(
         () => {
           message.success(`Correo enviado`)
+          updateLocalStorage('send')
+
           location.reload()
         },
-        (error) => {
-          message.error('Fallo al enviar' + error)
+        () => {
+          message.error('Fallo al enviar')
         },
       )
   }

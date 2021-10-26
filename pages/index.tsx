@@ -6,10 +6,12 @@ import Inicio from '../Components/Inicio'
 import Navbar from '../Components/Navbar'
 import Proyects from '../Components/Proyects'
 import Skills from '../Components/Skills'
+import { updateLocalStorage } from '../Utils/updateLocalStorage'
 
 const IndexPage = (): JSX.Element => {
   useEffect(() => {
     document.title = 'Wilinston Quispe'
+    updateLocalStorage('views')
   }, [])
   return (
     <>

@@ -1,12 +1,14 @@
 import { Button, Col, Image, Row } from 'antd'
 import { useContext } from 'react'
 import { LanguageContext } from '../Context/LanguageContext'
+import { updateLocalStorage } from '../Utils/updateLocalStorage'
 
 const Inicio = (): JSX.Element => {
   const { setLocalLanguage, localLanguage } = useContext(LanguageContext)
 
   const changeLanguage = () => {
     setLocalLanguage(!localLanguage)
+    updateLocalStorage('change')
   }
 
   return (

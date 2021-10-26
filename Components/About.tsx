@@ -1,10 +1,14 @@
 import { Button, Col, Image, Row } from 'antd'
 import { useContext } from 'react'
 import { LanguageContext } from '../Context/LanguageContext'
+import { updateLocalStorage } from '../Utils/updateLocalStorage'
 import NavHead from './atoms/NavHead'
 
 const About = () => {
   const { localLanguage } = useContext(LanguageContext)
+  const handleClick = () => {
+    updateLocalStorage('downloads')
+  }
   return (
     <Row className="about" justify="center" align="middle" id="about">
       <Col style={{ width: '80%' }}>
@@ -49,7 +53,12 @@ const About = () => {
                   </p>
                 </Row>
                 <Row justify="space-around">
-                  <Button type="primary" href="/CV.pdf" download="wilcv">
+                  <Button
+                    onClick={handleClick}
+                    type="primary"
+                    href="/CV.pdf"
+                    download="wilcv"
+                  >
                     Descargar CV
                   </Button>
                 </Row>
@@ -78,7 +87,12 @@ const About = () => {
                   </p>
                 </Row>
                 <Row justify="space-around">
-                  <Button type="primary" href="/CV.pdf" download="wilcv">
+                  <Button
+                    onClick={handleClick}
+                    type="primary"
+                    href="/CV.pdf"
+                    download="wilcv"
+                  >
                     Download CV
                   </Button>
                 </Row>
