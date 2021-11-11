@@ -79,6 +79,21 @@ const Proyects = (): JSX.Element => {
               'API Youtube',
             ]}
           />
+          <ProyectsCard
+            img="/img/Menus.png"
+            title="Menus Diarios Pa'ti"
+            titleEnglish="Menus Diarios Pa'ti"
+            href="https://menus-diarios-pati.vercel.app/"
+            dataList={[
+              'TypeScript',
+              'Next.js',
+              'Css',
+              'React.js',
+              'Git',
+              'TailwindCSS',
+              'Apollo client',
+            ]}
+          />
         </Row>
       </Col>
     </Row>
