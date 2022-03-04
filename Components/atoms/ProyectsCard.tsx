@@ -50,7 +50,7 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
       <Card
         hoverable
         style={{ ...styleCard }}
-        cover={<img alt={title, titleEnglish} src={img} />}
+        cover={<img alt={titleEnglish} src={img} />}
       >
         <Row justify="center">
           <Col>
