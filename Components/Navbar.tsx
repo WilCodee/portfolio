@@ -30,8 +30,9 @@ const Navbar = ({ navMobileState, navSeeView, navNotSeeView }: ownProps) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="">
+        <a className="navbar-item" href="#">
           <img
+            alt='Wilinston Quispe LOGO'
             className="img_circle"
             src="https://yt3.ggpht.com/yti/ANoDKi637NyctiFkwTohMayhyFK7H7f1r8v4UtEqwP9dHA=s108-c-k-c0x00ffffff-no-rj"
           />

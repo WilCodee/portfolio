@@ -57,25 +57,25 @@ const Skills = (): JSX.Element => {
               <Col style={{ width: '50%' }}>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/react.svg" width={20} preview={false} />
+                    <Image src="/react.svg" alt='ReactJS' width={20} preview={false} />
                     <Progress showInfo={false} percent={80} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/graphql.svg" width={20} preview={false} />
+                    <Image src="/graphql.svg" alt='Graphql' width={20} preview={false} />
                     <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/javascript.svg" width={20} preview={false} />
+                    <Image src="/javascript.svg" alt='JavaScript' width={20} preview={false} />
                     <Progress showInfo={false} percent={70} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/ant-design.svg" width={20} preview={false} />
+                    <Image src="/ant-design.svg" alt='AntDesign' width={20} preview={false} />
                     <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>
@@ -83,6 +83,7 @@ const Skills = (): JSX.Element => {
                   <div style={{ width: '100%' }}>
                     <Image
                       src="/nextjs-icon.svg"
+                      alt='NextJS'
                       className="nextjs"
                       width={20}
                       preview={false}
@@ -92,13 +93,13 @@ const Skills = (): JSX.Element => {
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/typescript.svg" width={20} preview={false} />
+                    <Image src="/typescript.svg" alt='Typescript' width={20} preview={false} />
                     <Progress showInfo={false} percent={76} status="active" />
                   </div>
                 </Row>
                 <Row style={{ width: '100%' }}>
                   <div style={{ width: '100%' }}>
-                    <Image src="/tailwindcss.svg" width={20} preview={false} />
+                    <Image src="/tailwindcss.svg" alt='TailWindCSS' width={20} preview={false} />
                     <Progress showInfo={false} percent={65} status="active" />
                   </div>
                 </Row>

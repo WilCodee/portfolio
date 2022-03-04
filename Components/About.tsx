@@ -22,7 +22,8 @@ const About = () => {
             <Image
               style={{ borderRadius: '10px' }}
               src="/img/two.jpg"
-              preview={false}
+            alt='Wilinston Quispe'
+            preview={false}
               width={250}
             />
           </Col>

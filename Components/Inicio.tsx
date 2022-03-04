@@ -39,6 +39,7 @@ const Inicio = (): JSX.Element => {
             width={250}
             height="250px"
             preview={false}
+            alt='Wilinston Quispe'
             src="/img/one.jpg"
           />
           <Row justify="center" style={{ marginTop: '50px' }}>

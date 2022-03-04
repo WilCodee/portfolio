@@ -16,16 +16,16 @@ const Footer = (): JSX.Element => {
         <Row justify="center">
           <div>
             <a href="https://web.facebook.com/wil.quispe.1614" target="_blank">
-              <img className="footer_social" src="/facebook.svg" />
+              <img className="footer_social" alt='Wilinston Facebook' src="/facebook.svg" />
             </a>
             <a href="https://twitter.com/WilQuispe3" target="_blank">
-              <img className="footer_social" src="/twitter.svg" />
+              <img className="footer_social" alt='Wilinston Twitter' src="/twitter.svg" />
             </a>
             <a
               href="https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug"
               target="_blank"
             >
-              <img className="footer_social" src="/youtube.svg" />
+              <img className="footer_social" alt='Wilinston Youtube' src="/youtube.svg" />
             </a>
           </div>
         </Row>

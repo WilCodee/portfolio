@@ -13,7 +13,7 @@ const ContactItem: FunctionComponent<ContactItemProps> = ({
   return (
     <Row>
       <Col>
-        <img src={img} className="contact_logo" />
+        <img src={img} alt={txt} className="contact_logo" />
       </Col>
       <Col className="contact_items">
         <p>{txt}</p>
