@@ -122,8 +122,8 @@ const Proyects = (): JSX.Element => {
             ]}
             title="LIMPIZIMO"
             titleEnglish="LIMPIZIMO"
-            description={`Una app que le permite a las usuarias probarse los productos de maquillaje y recibir asesoría con ayuda de realidad aumentada e inteligencia artificial.`}
-            descriptionEnglish="An app that allows users to try on makeup products and receive advice with the help of augmented reality and artificial intelligence."
+            description={`Los usuarios pueden buscar personas que limpien, ordenas su casa lo puede hacer por horas y pueden ver su ubicación usando el mapa dentro del la app.`}
+            descriptionEnglish="Users can search for people who clean, tidy their house can do it for hours and they can see their location using the map inside the app."
             dataList={['React Native', 'React Native Navigation', 'Git']}
           />
         </Row>
