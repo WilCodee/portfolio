@@ -113,6 +113,19 @@ const Proyects = (): JSX.Element => {
               'App Gallery',
             ]}
           />
+          <ProyectsCard
+            img={[
+              '/img/LIMPIZIMO-1.png',
+              '/img/LIMPIZIMO-2.png',
+              '/img/LIMPIZIMO-3.png',
+              '/img/LIMPIZIMO-4.png',
+            ]}
+            title="LIMPIZIMO"
+            titleEnglish="LIMPIZIMO"
+            description={`Una app que le permite a las usuarias probarse los productos de maquillaje y recibir asesoría con ayuda de realidad aumentada e inteligencia artificial.`}
+            descriptionEnglish="An app that allows users to try on makeup products and receive advice with the help of augmented reality and artificial intelligence."
+            dataList={['React Native', 'React Native Navigation', 'Git']}
+          />
         </Row>
       </Col>
     </Row>
