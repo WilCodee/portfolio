@@ -19,7 +19,7 @@ const Proyects = (): JSX.Element => {
 
         <Row justify="center" gutter={[16, 16]}>
           <ProyectsCard
-            img="/img/Inicio-Goshop.png"
+            img={['/img/Inicio-Goshop.png']}
             title="Ecommerce venta de Ropas"
             titleEnglish="Ecommerce sale of clothes"
             href="https://mi-tienda-online.vercel.app/"
@@ -38,7 +38,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/img/porfolio.png"
+            img={['/img/porfolio.png']}
             title="Mi Portafolio"
             titleEnglish="My Portfolio"
             href="https://wilinston-quispe.vercel.app/"
@@ -52,7 +52,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/img/api-ecommerce.png"
+            img={['/img/api-ecommerce.png']}
             title="Creacion de API"
             titleEnglish="API creation"
             description="creación de una API para una tienda online"
@@ -66,7 +66,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/img/YT-clone.png"
+            img={['/img/YT-clone.png']}
             title="YT Clone"
             titleEnglish="YT Clone"
             href="https://yt-clone-two.vercel.app/"
@@ -80,7 +80,7 @@ const Proyects = (): JSX.Element => {
             ]}
           />
           <ProyectsCard
-            img="/img/Menus.png"
+            img={['/img/Menus.png']}
             title="Menus Diarios Pa'ti"
             titleEnglish="Menus Diarios Pa'ti"
             href="https://menus-diarios-pati.vercel.app/"
@@ -92,6 +92,25 @@ const Proyects = (): JSX.Element => {
               'Git',
               'TailwindCSS',
               'Apollo client',
+            ]}
+          />
+          <ProyectsCard
+            img={[
+              '/img/screen-1.png',
+              '/img/screen-2.png',
+              '/img/screen-3.png',
+              '/img/screen-4.png',
+            ]}
+            title="iMakeUp"
+            titleEnglish="iMakeUp"
+            description={`Una app que le permite a las usuarias probarse los productos de maquillaje y recibir asesoría con ayuda de realidad aumentada e inteligencia artificial.`}
+            descriptionEnglish="An app that allows users to try on makeup products and receive advice with the help of augmented reality and artificial intelligence."
+            dataList={[
+              'TypeScript',
+              'React Native',
+              'React Native Navigation',
+              'Git',
+              'App Gallery',
             ]}
           />
         </Row>

@@ -3,7 +3,7 @@ export interface dataTecnologi {
 }
 
 export interface CartInterface {
-  img: string
+  img: string[]
   title: string
   titleEnglish: string
   description?: string

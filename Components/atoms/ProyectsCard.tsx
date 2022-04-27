@@ -1,4 +1,4 @@
-import { Card, Col, Row, Typography } from 'antd'
+import { Card, Col, Image, Row, Typography } from 'antd'
 import { CSSProperties, useContext } from 'react'
 import { LanguageContext } from '../../Context/LanguageContext'
 import { CartInterface } from '../../Interfaces'
@@ -50,7 +50,26 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
       <Card
         hoverable
         style={{ ...styleCard }}
-        cover={<img alt={titleEnglish} src={img} />}
+        cover={
+          <Image.PreviewGroup>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              {img.map((i) => (
+                <Image
+                  alt={title}
+                  src={i}
+                  style={{ objectFit: 'contain' }}
+                  height={210.45}
+                />
+              ))}
+            </div>
+          </Image.PreviewGroup>
+        }
       >
         <Row justify="center">
           <Col>
