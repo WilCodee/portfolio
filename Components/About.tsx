@@ -53,14 +53,24 @@ const About = () => {
                     lucho día a día por mis sueños y metas.
                   </p>
                 </Row>
-                <Row justify="space-around">
+                <Row justify="center">
                   <Button
                     onClick={handleClick}
                     type="primary"
-                    href="/CV.pdf"
-                    download="wilcv"
+                    href="/WILINSTON-QUISPE_CV.pdf"
+                    download="WILINSTON-QUISPE_CV"
                   >
                     Descargar CV
+                  </Button>
+                  <Button
+                    onClick={handleClick}
+                    type="link"
+                    href="/WILINSTON-QUISPE_CV.pdf"
+                    download="WILINSTON-QUISPE_CV"
+                  >
+                    <a href="/WILINSTON-QUISPE_CV.pdf" target="_blank">
+                    Ver CV
+                    </a>
                   </Button>
                 </Row>
               </>
@@ -87,14 +97,24 @@ const About = () => {
                     development I am a person who fights for my dreams and goals
                   </p>
                 </Row>
-                <Row justify="space-around">
+                <Row justify="center">
                   <Button
                     onClick={handleClick}
                     type="primary"
-                    href="/CV.pdf"
-                    download="wilcv"
+                    href="/wilinston-quispe-cv_en.pdf"
+                    download="wilinston-quispe-cv_en"
                   >
                     Download CV
+                  </Button>
+                  <Button
+                    onClick={handleClick}
+                    type="link"
+                    href="/wilinston-quispe-cv_en.pdf"
+                    download="wilinston-quispe-cv_en"
+                  >
+                    <a href="/wilinston-quispe-cv_en.pdf" target="_blank">
+                    View CV
+                    </a>
                   </Button>
                 </Row>
               </>
