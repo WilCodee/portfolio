@@ -120,8 +120,9 @@ const Proyects = (): JSX.Element => {
         )}
 
         <Row justify="center" gutter={[16, 16]}>
-          {DATA.reverse().map((d) => (
+          {DATA.reverse().map((d,i) => (
             <ProyectsCard
+              key={i}
               img={d.img}
               title={d.title}
               titleEnglish={d.titleEnglish}

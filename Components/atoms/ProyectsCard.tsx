@@ -46,7 +46,7 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
   const { localLanguage } = useContext(LanguageContext)
 
   return (
-    <Col {...grid} className="cardAnimate">
+    <Col {...grid} className='cardAnimate'>
       <Card
         hoverable
         style={{ ...styleCard }}
@@ -59,8 +59,9 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
                 alignItems: 'center',
               }}
             >
-              {img.map((i) => (
+              {img.map((i, index) => (
                 <Image
+                  key={index}
                   alt={title}
                   src={i}
                   style={{ objectFit: 'contain' }}
@@ -71,16 +72,16 @@ const ProyectsCard = (props: CartInterface): JSX.Element => {
           </Image.PreviewGroup>
         }
       >
-        <Row justify="center">
+        <Row justify='center'>
           <Col>
-            <Row justify="center">
+            <Row justify='center'>
               <Paragraph style={{ ...styleParagraph }} ellipsis>
                 {localLanguage ? title : titleEnglish}
               </Paragraph>
             </Row>
-            <Row justify="center">
+            <Row justify='center'>
               {href ? (
-                <a href={href} target="_blank" className="card_href">
+                <a href={href} target='_blank' className='card_href'>
                   {localLanguage ? 'Visitar Pagina' : 'Go to the Page'}
                 </a>
               ) : (

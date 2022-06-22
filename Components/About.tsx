@@ -10,20 +10,20 @@ const About = () => {
     updateLocalStorage('downloads')
   }
   return (
-    <Row className="about" justify="center" align="middle" id="about">
+    <Row className='about' justify='center' align='middle' id='about'>
       <Col style={{ width: '80%' }}>
         {localLanguage ? (
-          <NavHead txtMain="Sobre mi" />
+          <NavHead txtMain='Sobre mi' />
         ) : (
-          <NavHead txtMain="About me" />
+          <NavHead txtMain='About me' />
         )}
-        <Row justify="space-around" align="middle">
+        <Row justify='space-around' align='middle'>
           <Col>
             <Image
               style={{ borderRadius: '10px' }}
-              src="/img/two.jpg"
-            alt='Wilinston Quispe'
-            preview={false}
+              src='/img/two.jpg'
+              alt='Wilinston Quispe'
+              preview={false}
               width={250}
             />
           </Col>
@@ -43,8 +43,8 @@ const About = () => {
                     soy un creador de contenido comparto mis conocimientos en la
                     plataforma{' '}
                     <a
-                      href="https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug"
-                      target="_blank"
+                      href='https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug'
+                      target='_blank'
                     >
                       YouTube
                     </a>{' '}
@@ -53,23 +53,18 @@ const About = () => {
                     lucho día a día por mis sueños y metas.
                   </p>
                 </Row>
-                <Row justify="center">
+                <Row justify='center'>
                   <Button
                     onClick={handleClick}
-                    type="primary"
-                    href="/WILINSTON-QUISPE_CV.pdf"
-                    download="WILINSTON-QUISPE_CV"
+                    type='primary'
+                    href='/WILINSTON-QUISPE_CV.pdf'
+                    download='WILINSTON-QUISPE_CV'
                   >
                     Descargar CV
                   </Button>
-                  <Button
-                    onClick={handleClick}
-                    type="link"
-                    href="/WILINSTON-QUISPE_CV.pdf"
-                    download="WILINSTON-QUISPE_CV"
-                  >
-                    <a href="/WILINSTON-QUISPE_CV.pdf" target="_blank">
-                    Ver CV
+                  <Button onClick={handleClick} type='link'>
+                    <a href='/WILINSTON-QUISPE_CV.pdf' target='_blank'>
+                      Ver CV
                     </a>
                   </Button>
                 </Row>
@@ -88,8 +83,8 @@ const About = () => {
                     learning because technology advances very fast, I am a
                     content creator I share my knowledge on the{' '}
                     <a
-                      href="https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug"
-                      target="_blank"
+                      href='https://www.youtube.com/channel/UC2xLpPmnDyAxvHlOTOdt_Ug'
+                      target='_blank'
                     >
                       YouTube
                     </a>{' '}
@@ -97,23 +92,18 @@ const About = () => {
                     development I am a person who fights for my dreams and goals
                   </p>
                 </Row>
-                <Row justify="center">
+                <Row justify='center'>
                   <Button
                     onClick={handleClick}
-                    type="primary"
-                    href="/wilinston-quispe-cv_en.pdf"
-                    download="wilinston-quispe-cv_en"
+                    type='primary'
+                    href='/wilinston-quispe-cv_en.pdf'
+                    download='wilinston-quispe-cv_en'
                   >
                     Download CV
                   </Button>
-                  <Button
-                    onClick={handleClick}
-                    type="link"
-                    href="/wilinston-quispe-cv_en.pdf"
-                    download="wilinston-quispe-cv_en"
-                  >
-                    <a href="/wilinston-quispe-cv_en.pdf" target="_blank">
-                    View CV
+                  <Button onClick={handleClick} type='link'>
+                    <a href='/wilinston-quispe-cv_en.pdf' target='_blank'>
+                      View CV
                     </a>
                   </Button>
                 </Row>
