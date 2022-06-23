@@ -15,17 +15,17 @@ const grid = {
 const Skills = (): JSX.Element => {
   const { localLanguage } = useContext(LanguageContext)
   return (
-    <Row className="about" justify="center" align="middle" id="skills">
+    <Row className='about' justify='center' align='middle' id='skills'>
       <Col style={{ width: '80%' }}>
         {localLanguage ? (
-          <NavHead txtMain="Mis Skills" />
+          <NavHead txtMain='Mis Skills' />
         ) : (
-          <NavHead txtMain="My Skills" />
+          <NavHead txtMain='My Skills' />
         )}
         <Row
           style={{ width: '100%', margin: '1em 0 0' }}
-          justify="space-around"
-          align="middle"
+          justify='space-around'
+          align='middle'
         >
           <Col {...grid}>
             {localLanguage ? (
@@ -53,54 +53,70 @@ const Skills = (): JSX.Element => {
             )}
           </Col>
           <Col {...grid}>
-            <Row justify="center">
-              <Col style={{ width: '50%' }}>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/react.svg" alt='ReactJS' width={20} preview={false} />
-                    <Progress showInfo={false} percent={80} status="active" />
-                  </div>
-                </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/graphql.svg" alt='Graphql' width={20} preview={false} />
-                    <Progress showInfo={false} percent={65} status="active" />
-                  </div>
-                </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/javascript.svg" alt='JavaScript' width={20} preview={false} />
-                    <Progress showInfo={false} percent={70} status="active" />
-                  </div>
-                </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/ant-design.svg" alt='AntDesign' width={20} preview={false} />
-                    <Progress showInfo={false} percent={65} status="active" />
-                  </div>
-                </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
+            <Row justify='center'>
+              <Col>
+                <Row justify='center'>
+                  <div style={{ margin: '10px' }}>
                     <Image
-                      src="/nextjs-icon.svg"
-                      alt='NextJS'
-                      className="nextjs"
-                      width={20}
+                      src='/react.svg'
+                      alt='ReactJS'
+                      width={80}
                       preview={false}
                     />
-                    <Progress showInfo={false} percent={75} status="active" />
+                  </div>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/graphql.svg'
+                      alt='Graphql'
+                      width={80}
+                      preview={false}
+                    />
+                  </div>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/javascript.svg'
+                      alt='JavaScript'
+                      width={80}
+                      preview={false}
+                    />
                   </div>
                 </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/typescript.svg" alt='Typescript' width={20} preview={false} />
-                    <Progress showInfo={false} percent={76} status="active" />
+
+                <Row justify='center'>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/ant-design.svg'
+                      alt='AntDesign'
+                      width={80}
+                      preview={false}
+                    />
+                  </div>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/nextjs-icon.svg'
+                      alt='NextJS'
+                      className='nextjs'
+                      width={80}
+                      preview={false}
+                    />
+                  </div>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/typescript.svg'
+                      alt='Typescript'
+                      width={80}
+                      preview={false}
+                    />
                   </div>
                 </Row>
-                <Row style={{ width: '100%' }}>
-                  <div style={{ width: '100%' }}>
-                    <Image src="/tailwindcss.svg" alt='TailWindCSS' width={20} preview={false} />
-                    <Progress showInfo={false} percent={65} status="active" />
+                <Row justify='center'>
+                  <div style={{ margin: '10px' }}>
+                    <Image
+                      src='/tailwindcss.svg'
+                      alt='TailWindCSS'
+                      width={80}
+                      preview={false}
+                    />
                   </div>
                 </Row>
               </Col>
