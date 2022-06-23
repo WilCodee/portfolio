@@ -1,4 +1,4 @@
-import { Col, Image, Progress, Row } from 'antd'
+import { Col, Image, Row } from 'antd'
 import { useContext } from 'react'
 import { LanguageContext } from '../Context/LanguageContext'
 import NavHead from './atoms/NavHead'
@@ -30,7 +30,7 @@ const Skills = (): JSX.Element => {
           <Col {...grid}>
             {localLanguage ? (
               <>
-                <Row>
+                <Row justify='center'>
                   <p style={{ width: '400px', textAlign: 'center' }}>
                     Soy apasionado con las tecnologías que trabajo, me gusta
                     trabajar con buenas prácticas en el desarrollo he escogido
@@ -41,7 +41,7 @@ const Skills = (): JSX.Element => {
               </>
             ) : (
               <>
-                <Row>
+                <Row justify='center'>
                   <p style={{ width: '400px', textAlign: 'center' }}>
                     I'm passionate about the technologies I work with, I like to
                     work with good development practices. I have chosen this
