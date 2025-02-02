@@ -1,10 +1,10 @@
-import { Button, Col, Form, Input, message, Row } from 'antd'
-import ContactItem from './atoms/ContactItem'
-import NavHead from './atoms/NavHead'
-import emailjs from 'emailjs-com'
-import { LanguageContext } from '../Context/LanguageContext'
-import { useContext } from 'react'
-import { updateLocalStorage } from '../Utils/updateLocalStorage'
+import { Button, Col, Form, Input, message, Row } from "antd";
+import ContactItem from "./atoms/ContactItem";
+import NavHead from "./atoms/NavHead";
+import emailjs from "emailjs-com";
+import { LanguageContext } from "../Context/LanguageContext";
+import { useContext } from "react";
+import { updateLocalStorage } from "../Utils/updateLocalStorage";
 
 const gridMain = {
   xs: 24,
@@ -13,7 +13,7 @@ const gridMain = {
   lg: 8,
   xl: 6,
   xxl: 6,
-}
+};
 
 const gridForm = {
   xs: 24,
@@ -22,52 +22,71 @@ const gridForm = {
   lg: 12,
   xl: 12,
   xxl: 12,
-}
+};
 
 const styleForm = {
-  borderRadius: '7px',
-  backgroundColor: '#606770',
-  border: 'none',
-  caretColor: '#fff',
-  color: '#fff',
-}
+  borderRadius: "7px",
+  backgroundColor: "#606770",
+  border: "none",
+  caretColor: "#fff",
+  color: "#fff",
+};
 
 const Contact = () => {
-  const { localLanguage } = useContext(LanguageContext)
+  const { localLanguage } = useContext(LanguageContext);
 
   // envio email utilizando el servicio emailjs
-  const sendEmail = (e: any): void => {
-    e.preventDefault()
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+
+    const name = (
+      e.currentTarget.elements.namedItem("name") as HTMLInputElement
+    )?.value;
+    const subject = (
+      e.currentTarget.elements.namedItem("subject") as HTMLInputElement
+    )?.value;
+    const email = (
+      e.currentTarget.elements.namedItem("email") as HTMLInputElement
+    )?.value;
+    const messageMail = (
+      e.currentTarget.elements.namedItem("message") as HTMLInputElement
+    )?.value;
+
+    if (!name || !subject || !email || !messageMail) {
+      message.error("Campos obligatorios: nombre, asunto, correo, mensaje");
+      return;
+    }
+
     emailjs
       .sendForm(
-        'service_jcuzbli',
-        'template_m6xltea',
+        "service_jcuzbli",
+        "template_m6xltea",
         e.target as HTMLFormElement,
-        'user_0Hjr5WWn82n2t2F8e1uxT',
+        "user_0Hjr5WWn82n2t2F8e1uxT"
       )
       .then(
         () => {
-          message.success(`Correo enviado`)
-          updateLocalStorage('send')
+          message.success(`Correo enviado`);
+          updateLocalStorage("send");
 
-          location.reload()
+          location.reload();
         },
         () => {
-          message.error('Fallo al enviar')
-        },
-      )
-  }
+          message.error("Fallo al enviar");
+        }
+      );
+  };
 
   return (
     <Row className="contact" justify="center" align="middle" id="contact">
-      <Col style={{ width: '80%' }}>
+      <Col style={{ width: "80%" }}>
         {localLanguage ? (
           <NavHead txtMain="Contacto" />
         ) : (
           <NavHead txtMain="Contact" />
         )}
 
-        <Row style={{ width: '100%' }} gutter={[16, 16]} justify="space-around">
+        <Row style={{ width: "100%" }} gutter={[16, 16]} justify="space-around">
           <Col {...gridMain}>
             <Row>
               {localLanguage ? (
@@ -92,7 +111,7 @@ const Contact = () => {
             <Row>
               <Col>
                 <ContactItem img="man.svg" txt="Wilinston Quispe" />
-                <ContactItem img="gmail.svg" txt="newwilcode@gmail.com" />
+                <ContactItem img="gmail.svg" txt="wilinston.aira@gmail.com " />
                 <ContactItem img="placeholder.svg" txt="Lima Peru" />
               </Col>
             </Row>
@@ -107,20 +126,20 @@ const Contact = () => {
               <Row justify="center">
                 <Col {...gridForm}>
                   <Form.Item
-                    style={{ marginRight: '.5em' }}
+                    style={{ marginRight: ".5em" }}
                     name="name"
                     rules={[
                       {
                         required: true,
                         message: `${
-                          localLanguage ? 'campo requerido!' : 'required field!'
+                          localLanguage ? "campo requerido!" : "required field!"
                         }`,
                       },
                     ]}
                   >
                     <Input
                       name="name"
-                      placeholder={`${localLanguage ? 'Nombre' : 'Name'}`}
+                      placeholder={`${localLanguage ? "Nombre" : "Name"}`}
                       style={{ ...styleForm }}
                     />
                   </Form.Item>
@@ -132,14 +151,14 @@ const Contact = () => {
                       {
                         required: true,
                         message: `${
-                          localLanguage ? 'campo requerido!' : 'required field!'
+                          localLanguage ? "campo requerido!" : "required field!"
                         }`,
                       },
                     ]}
                   >
                     <Input
                       name="subject"
-                      placeholder={`${localLanguage ? 'Asunto' : 'Subject'}`}
+                      placeholder={`${localLanguage ? "Asunto" : "Subject"}`}
                       style={{ ...styleForm }}
                     />
                   </Form.Item>
@@ -152,20 +171,20 @@ const Contact = () => {
                   {
                     required: true,
                     message: `${
-                      localLanguage ? 'campo requerido!' : 'required field!'
+                      localLanguage ? "campo requerido!" : "required field!"
                     }`,
                   },
                   {
-                    type: 'email',
+                    type: "email",
                     message: `${
-                      localLanguage ? 'correo invalida' : 'invalid email!'
+                      localLanguage ? "correo invalida" : "invalid email!"
                     }`,
                   },
                 ]}
               >
                 <Input
                   name="email"
-                  placeholder={`${localLanguage ? 'Tu correo' : 'Your email'}`}
+                  placeholder={`${localLanguage ? "Tu correo" : "Your email"}`}
                   style={{ ...styleForm }}
                 />
               </Form.Item>
@@ -176,21 +195,21 @@ const Contact = () => {
                   {
                     required: true,
                     message: `${
-                      localLanguage ? 'campo requerido!' : 'required field!'
+                      localLanguage ? "campo requerido!" : "required field!"
                     }`,
                   },
                 ]}
               >
                 <Input.TextArea
                   name="message"
-                  placeholder={`${localLanguage ? 'Mensaje...' : 'Message...'}`}
+                  placeholder={`${localLanguage ? "Mensaje..." : "Message..."}`}
                   style={{ ...styleForm }}
                 />
               </Form.Item>
 
               <Row justify="center">
                 <Button type="primary" htmlType="submit">
-                  {localLanguage ? 'Enviar' : 'Send'}
+                  {localLanguage ? "Enviar" : "Send"}
                 </Button>
               </Row>
             </form>
@@ -198,7 +217,7 @@ const Contact = () => {
         </Row>
       </Col>
     </Row>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -19,11 +19,15 @@ html {
   border-radius: 50%;
   object-fit: cover;
 }
+.img_squart {
+  border-radius: 15px;
+  object-fit: cover;
+}
 .main_page {
-  background-image: url('https://wallpaperaccess.com/full/2918065.jpg');
+  background-image: url('/img/blue.jpg');
   background-color: #18191a;
-  background-repeat: no-repeat;
-  background-attachment: cover;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: cover; */
   background-position: right;
   background-size: cover;
   height: 100vh;
